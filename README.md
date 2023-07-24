@@ -1,4 +1,4 @@
-# Real-Time Face Recognition (RealTimeFaceRecognition.py)
+# Real-Time Face Recognition (RealTimeFaceRecognition.py)(I used 3.10.5)
 
 ## Description
 This Python program utilizes computer vision techniques to perform real-time face recognition. When executed, it opens up a window that accesses your camera and scans for faces in the live feed. The program then compares the detected face with an image stored in the program directory. If a match is found, it will display the name of the recognized person next to their head. If there is no match, the output will be displayed as "Unknown."
@@ -24,7 +24,7 @@ python RealTimeFaceRecognition.py
 
 
 
-# Real-Time Face Recognition (Basics.py)
+# Real-Time Face Recognition (Basics.py)(I used 3.10.5)
 
 ## Description
 This Python program utilizes computer vision techniques to perform face matching. When executed, it opens up two windows. One for each image that you are testing with. If there is a match between the two images it will output True and next to it will be the face distance number which is how similar the faces are.
