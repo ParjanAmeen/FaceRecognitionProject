@@ -9,7 +9,7 @@ This Python program utilizes computer vision techniques to perform real-time fac
 3. Install the required libraries by running the following command:
 pip install numpy,
 pip install face_recognition,
-pip install cv2
+pip install opencv-python
 
 5. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
 
@@ -34,7 +34,7 @@ This Python program utilizes computer vision techniques to perform face matching
 2. Create a virtual environment in a directory 
 3. Install the required libraries by running the following command:
 pip install face_recognition,
-pip install cv2
+pip install opencv-python
 
 5. Place the images you want to match in the ImageBasic folder. Name the image appropriately to match the person's name or any unique identifier.
 
