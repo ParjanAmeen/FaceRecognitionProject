@@ -11,15 +11,13 @@ pip install numpy
 pip install face_recognition
 pip install cv2
 
-Note: These libraries provide the necessary tools for face detection and recognition.
+5. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
 
-4. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
-
-5. Execute the program by running the following command in the terminal or command prompt:
+6. Execute the program by running the following command in the terminal or command prompt:
 python RealTimeFaceRecognition.py
 
-6. A window will open, displaying the live feed from your camera. The program will start scanning for faces.
+7. A window will open, displaying the live feed from your camera. The program will start scanning for faces.
 
-7. If a face is detected and recognized, the name of the person will be displayed next to their head. If the face does not match any stored image, the output will be "Unknown."
+8. If a face is detected and recognized, the name of the person will be displayed next to their head. If the face does not match any stored image, the output will be "Unknown."
 
-8. Press 'q' to quit the program and close the camera window.
+9. Press 'q' to quit the program and close the camera window.
