@@ -11,7 +11,7 @@ pip install numpy,
 pip install face_recognition,
 pip install opencv-python
 
-5. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
+5. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier. You have to change line 14 to the correct image file name and line 20 to the name of what you want on the webcam.
 
 6. Execute the program by running the following command in the terminal or command prompt:
 python RealTimeFaceRecognition.py
@@ -36,7 +36,7 @@ This Python program utilizes computer vision techniques to perform face matching
 pip install face_recognition,
 pip install opencv-python
 
-5. Place the images you want to match in the ImageBasic folder. Name the image appropriately to match the person's name or any unique identifier.
+5. Place the images you want to match in the ImageBasic folder. Name the image appropriately to match the person's name or any unique identifier. You will have to change lines 6 and 8 to the correct file image names.
 
 6. Execute the program by running the following command in the terminal or command prompt:
 python Basics.py
