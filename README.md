@@ -5,7 +5,7 @@ This Python program utilizes computer vision techniques to perform real-time fac
 
 ## How to Use
 1. Ensure you have Python installed on your system (Python 3.6 or higher).
-2. Create a virtual environment in a directory 
+2. Create a virtual environment in a directory(python3 -m venv venv and then venv\Scripts\activate)(Those are the command prompts for windows it may differ for other OS)
 3. Install the required libraries by running the following command:
 pip install numpy,
 pip install face_recognition,
@@ -31,7 +31,7 @@ This Python program utilizes computer vision techniques to perform face matching
 
 ## How to Use
 1. Ensure you have Python installed on your system (Python 3.6 or higher).
-2. Create a virtual environment in a directory 
+2. Create a virtual environment in a directory(python3 -m venv venv and then venv\Scripts\activate)(Those are the command prompts for windows it may differ for other OS)
 3. Install the required libraries by running the following command:
 pip install face_recognition,
 pip install opencv-python
