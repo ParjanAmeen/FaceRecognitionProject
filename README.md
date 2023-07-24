@@ -5,20 +5,21 @@ This Python program utilizes computer vision techniques to perform real-time fac
 
 ## How to Use
 1. Ensure you have Python installed on your system (Python 3.6 or higher).
-2. Install the required libraries by running the following command:
-pip install opencv-python
-pip install opencv-python-headless
-pip install opencv-contrib-python
+2. Create a virtual environment in a directory 
+3. Install the required libraries by running the following command:
+pip install numpy
+pip install face_recognition
+pip install cv2
 
 Note: These libraries provide the necessary tools for face detection and recognition.
 
-3. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
+4. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
 
-4. Execute the program by running the following command in the terminal or command prompt:
+5. Execute the program by running the following command in the terminal or command prompt:
 python RealTimeFaceRecognition.py
 
-5. A window will open, displaying the live feed from your camera. The program will start scanning for faces.
+6. A window will open, displaying the live feed from your camera. The program will start scanning for faces.
 
-6. If a face is detected and recognized, the name of the person will be displayed next to their head. If the face does not match any stored image, the output will be "Unknown."
+7. If a face is detected and recognized, the name of the person will be displayed next to their head. If the face does not match any stored image, the output will be "Unknown."
 
-7. Press 'q' to quit the program and close the camera window.
+8. Press 'q' to quit the program and close the camera window.
