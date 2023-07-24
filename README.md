@@ -7,8 +7,8 @@ This Python program utilizes computer vision techniques to perform real-time fac
 1. Ensure you have Python installed on your system (Python 3.6 or higher).
 2. Create a virtual environment in a directory 
 3. Install the required libraries by running the following command:
-pip install numpy
-pip install face_recognition
+pip install numpy,
+pip install face_recognition,
 pip install cv2
 
 5. Place the image of the person you want to recognize in the program directory. Name the image appropriately to match the person's name or any unique identifier.
