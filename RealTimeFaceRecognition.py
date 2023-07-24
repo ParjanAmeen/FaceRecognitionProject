@@ -11,7 +11,7 @@ import cv2
 video_capture = cv2.VideoCapture(0)
 
 # Loads the image in the directory and encodes it
-parjan_image = fr.load_image_file('parjan.jpg')
+parjan_image = fr.load_image_file('Parjan.jpg')
 parjan_face_encoding = fr.face_encodings(parjan_image)[0]
 
 known_faces_encodings = [parjan_face_encoding]
