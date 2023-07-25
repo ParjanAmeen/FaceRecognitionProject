@@ -36,7 +36,7 @@ This Python program utilizes computer vision techniques to perform face matching
 pip install face_recognition,
 pip install opencv-python
 
-3.If you run into issues downloading face_recognition make sure you have cmake intalled (pip install cmake) and then dlib(pip install dlib) and then try pip install face_recognition. If you still experience any issues try visiting this webpage https://stackoverflow.com/questions/70001837/problem-in-installing-python-library-face-recognition-on-windows-10-11 
+3. If you run into issues downloading face_recognition make sure you have cmake intalled (pip install cmake) and then dlib(pip install dlib) and then try pip install face_recognition. If you still experience any issues try visiting this webpage https://stackoverflow.com/questions/70001837/problem-in-installing-python-library-face-recognition-on-windows-10-11 
 
 4. Place the images you want to match in the ImageBasic folder. Name the image appropriately to match the person's name or any unique identifier. You will have to change lines 6 and 8 to the correct file image names.
 
