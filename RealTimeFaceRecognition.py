@@ -1,8 +1,3 @@
-# This program uses a webcam and recognizes faces. It will compare
-# the face on the webcam to the jpg file stored in the directory. If the faces
-# are the same a name tag will appear under the face. If they are not similar a
-# "unknown" prompt will come up
-
 import numpy as np
 import face_recognition as fr
 import cv2
@@ -14,10 +9,14 @@ video_capture = cv2.VideoCapture(0)
 parjan_image = fr.load_image_file('Parjan.jpg')
 parjan_face_encoding = fr.face_encodings(parjan_image)[0]
 
+# array that holds the face encodings
 known_faces_encodings = [parjan_face_encoding]
 
 # If I had more names we would just pass more in this array
 known_face_names = ['Parjan']
+
+# Set the threshold for face matching (adjust this value as needed)
+threshold = 0.6
 
 while True:
     ret, frame = video_capture.read()
@@ -29,7 +28,7 @@ while True:
 
     for (top, right, bottom, left), face_encodings in zip(face_location, face_encodings):
 
-        matches = fr.compare_faces(known_faces_encodings, face_encodings)
+        matches = fr.compare_faces(known_faces_encodings, face_encodings, tolerance=threshold)
 
         name = 'Unknown'
 
@@ -47,7 +46,7 @@ while True:
         font = cv2.FONT_HERSHEY_SIMPLEX
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
 
-    cv2.imshow('Webcam_facerecognition', frame)
+    cv2.imshow('Webcam_face_recognition', frame)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
