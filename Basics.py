@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 import face_recognition
 
 # Loading in the images from the ImageBasic directory and assigning them to variables
@@ -20,8 +19,11 @@ encodeTest = face_recognition.face_encodings(imgTest)[0]
 cv2.rectangle(imgTest, (faceLocTest[3], faceLocTest[0]),
               (faceLocTest[1], faceLocTest[2]), (225, 0, 255), 2)
 
+# Set the threshold for face matching (adjust this value as needed)
+threshold = 0.6
+
 # Compares two images and determines if they are a match. Prints out a true/false statement
-results = face_recognition.compare_faces([encodeElon], encodeTest)
+results = face_recognition.compare_faces([encodeElon], encodeTest, tolerance=threshold)
 faceDis = face_recognition.face_distance([encodeElon], encodeTest)
 print(results, faceDis)
 cv2.putText(imgTest, f'{results} {round(faceDis[0], 2)}',
